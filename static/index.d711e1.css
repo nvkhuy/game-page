@@ -823,10 +823,10 @@ input::-webkit-contacts-auto-fill-button {
 }
 
 .header__logo {
-    height: 43px;
+    height: 100px;
     margin-right: 70px;
     position: relative;
-    width: 85px;
+    width: 100px;
     z-index: 100
 }
 
@@ -951,7 +951,7 @@ input::-webkit-contacts-auto-fill-button {
 
 @media only screen and (max-width: 430px) {
     .header {
-        padding: 15px 0
+        padding: 10px 0
     }
 
     .header-menu__list {
@@ -969,10 +969,10 @@ input::-webkit-contacts-auto-fill-button {
 
 .footer__logo {
     display: inline-block;
-    height: 43px;
+    height: 70px;
     margin-bottom: 38px;
     text-decoration: none;
-    width: 86px
+    width: 70px
 }
 
 .footer__social {
