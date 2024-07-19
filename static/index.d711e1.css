@@ -823,10 +823,10 @@ input::-webkit-contacts-auto-fill-button {
 }
 
 .header__logo {
-    height: 100px;
+    height: 70px;
     margin-right: 70px;
     position: relative;
-    width: 100px;
+    width: 70px;
     z-index: 100
 }
 
@@ -961,18 +961,18 @@ input::-webkit-contacts-auto-fill-button {
 }
 
 .footer {
-    background: #000;
+    background: #f4ecd8;
     border-top: 1px solid #494357;
-    padding: 88px 0 110px;
+    padding: 30px 0 30px;
     width: 100%
 }
 
 .footer__logo {
     display: inline-block;
-    height: 70px;
+    height: 50px;
     margin-bottom: 38px;
     text-decoration: none;
-    width: 70px
+    width: 50px
 }
 
 .footer__social {
@@ -1021,7 +1021,7 @@ input::-webkit-contacts-auto-fill-button {
 }
 
 .footer__links li a {
-    color: #fff;
+    color: #1A3636;
     font-weight: 600;
     text-decoration: underline
 }
@@ -2383,13 +2383,13 @@ input::-webkit-contacts-auto-fill-button {
 }
 
 .nutshell {
-    background: #0e0c14;
+    background: #f4ecd8;
     padding-bottom: 106px;
     padding-top: 105px
 }
 
 .nutshell__title {
-    color: #fff;
+    color: #1A3636;
     font-size: 35px;
     font-weight: 700;
     margin-bottom: 75px;
@@ -2415,7 +2415,7 @@ input::-webkit-contacts-auto-fill-button {
 }
 
 .nutshell-item__text {
-    color: #fff;
+    color: #1A3636;
     font-size: 20px;
     font-weight: 600;
     margin: 0 auto 36px;
@@ -2590,11 +2590,11 @@ input::-webkit-contacts-auto-fill-button {
 }
 
 .games {
-    background: #0e0c14
+    background: #f4ecd8
 }
 
 .games__background {
-    background: #0e0c14;
+    background: #f4e8d0;
     border-radius: 27px;
     margin: auto;
     max-width: 84.5%
@@ -2643,7 +2643,7 @@ input::-webkit-contacts-auto-fill-button {
 }
 
 .games__item-name {
-    color: #fff;
+    color: #1A3636;
     font-size: 20px;
     font-weight: 500;
     text-align: center;
@@ -2698,7 +2698,7 @@ input::-webkit-contacts-auto-fill-button {
     }
 
     .games__item-name {
-        color: #7a7290
+        color: #1A3636
     }
 
     .games__item:first-child {
@@ -2761,7 +2761,7 @@ input::-webkit-contacts-auto-fill-button {
     }
 
     .games__item-name {
-        color: #7a7290;
+        color: #131842;
         font-size: 12px;
         width: 83px
     }
