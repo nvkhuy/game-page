@@ -1044,15 +1044,15 @@ input::-webkit-contacts-auto-fill-button {
 }
 
 .pp-and-tou-wrapper {
-    background-color: #0e0c14;
-    color: #7a7290;
+    background-color: #f4ecd8;
+    color: #1A3636;
     min-width: 100%;
     padding-bottom: 200px;
     padding-top: 65px
 }
 
 .pp-and-tou-wrapper h1 {
-    color: #fff;
+    color: #1A3636;
     font-size: 55px;
     font-weight: 700;
     line-height: 67px;
@@ -1060,7 +1060,7 @@ input::-webkit-contacts-auto-fill-button {
 }
 
 .pp-and-tou-wrapper h1, .pp-and-tou-wrapper h2, .pp-and-tou-wrapper h3, .pp-and-tou-wrapper h4, .pp-and-tou-wrapper h5 {
-    color: #fff
+    color: #1A3636
 }
 
 .pp-and-tou-wrapper p {
@@ -1077,7 +1077,7 @@ input::-webkit-contacts-auto-fill-button {
 }
 
 .pp-and-tou-wrapper strong {
-    color: #fff
+    color: #FF9209
 }
 
 .pp-and-tou-wrapper .publish-date {
@@ -2639,7 +2639,7 @@ input::-webkit-contacts-auto-fill-button {
 }
 
 .games__item:hover .games__item-image {
-    transform: scale(1.1)
+    transform: scale(1.2)
 }
 
 .games__item-name {
