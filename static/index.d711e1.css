@@ -130,32 +130,27 @@ input::-webkit-contacts-auto-fill-button {
 @font-face {
     font-family: Montserrat;
     font-weight: 400;
-    src: url(/wp-content/themes/freeplay-site/assets/fonts/Montserrat-Regular.woff) format("woff2"), url(/wp-content/themes/freeplay-site/assets/fonts/Montserrat-Regular.woff) format("woff")
 }
 
 @font-face {
     font-family: Montserrat;
     font-weight: 500;
-    src: url(/wp-content/themes/freeplay-site/assets/fonts/Montserrat-Medium.woff2) format("woff2"), url(/wp-content/themes/freeplay-site/assets/fonts/Montserrat-Medium.woff) format("woff")
 }
 
 @font-face {
     font-family: Montserrat;
     font-style: italic;
     font-weight: 500;
-    src: url(/wp-content/themes/freeplay-site/assets/fonts/Montserrat-MediumItalic.woff2) format("woff2"), url(/wp-content/themes/freeplay-site/assets/fonts/Montserrat-MediumItalic.woff) format("woff")
 }
 
 @font-face {
     font-family: Montserrat;
     font-weight: 600;
-    src: url(/wp-content/themes/freeplay-site/assets/fonts/Montserrat-SemiBold.woff2) format("woff2"), url(/wp-content/themes/freeplay-site/assets/fonts/Montserrat-SemiBold.woff) format("woff")
 }
 
 @font-face {
     font-family: Montserrat;
     font-weight: 700;
-    src: url(/wp-content/themes/freeplay-site/assets/fonts/Montserrat-Bold.woff2) format("woff2"), url(/wp-content/themes/freeplay-site/assets/fonts/Montserrat-Bold.woff) format("woff")
 }
 
 .text-input {
