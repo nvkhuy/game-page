@@ -2634,7 +2634,7 @@ input::-webkit-contacts-auto-fill-button {
 }
 
 .games__item:hover .games__item-image {
-    transform: scale(1.2)
+    transform: scale(1.1)
 }
 
 .games__item-name {
