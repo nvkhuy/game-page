@@ -108,6 +108,7 @@
             const response = await fetch('static/games.json');
             const data = await response.json();
 
+
             // Setup Android
             const androidGrid = document.getElementById('android-grid');
             document.getElementById('android-dev-link').href = data.android.developer_url;
