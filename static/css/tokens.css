@@ -1,0 +1,42 @@
+/* =================================================================
+   DESIGN TOKENS (tokens.css)
+   -----------------------------------------------------------------
+   Single source of truth for the visual language.
+   Every component references these abstractions — never hard-coded
+   values. To re-theme the site, edit only this file.
+   ================================================================= */
+
+:root {
+    /* --- Color Palette --- */
+    --color-bg:            #f4ecd8;
+    --color-bg-alt:        #f4e8d0;
+    --color-text:          #1a3636;
+    --color-text-muted:    #5a5a5a;
+    --color-accent:        #5832c1;
+    --color-accent-hover:  #845fec;
+    --color-border:        #c8bfa8;
+    --color-white:         #ffffff;
+    --color-copyright:     #6b6b6b;
+
+    /* --- Typography --- */
+    --font-family:         'Inter', system-ui, -apple-system, sans-serif;
+
+    /* --- Border Radius --- */
+    --radius-sm:           8px;
+    --radius-md:           16px;
+    --radius-lg:           24px;
+    --radius-xl:           30px;
+
+    /* --- Shadows --- */
+    --shadow-card:         0 4px 24px rgba(26, 54, 54, 0.08);
+    --shadow-hover:        0 8px 32px rgba(88, 50, 193, 0.18);
+
+    /* --- Motion --- */
+    --transition-duration: 0.3s;
+    --transition-easing:   cubic-bezier(0.4, 0, 0.2, 1);
+    --transition:          var(--transition-duration) var(--transition-easing);
+
+    /* --- Layout --- */
+    --container-max:       1096px;
+    --container-px:        clamp(1.25rem, 5vw, 4.5rem);
+}

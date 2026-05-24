@@ -1,731 +1,151 @@
 <!DOCTYPE html>
-<html lang="en-US" style="--vh: 17.990000000000002px;">
+<html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="static/nvkhuy-logo.png"
-          type="image/x-icon">
-    <link rel="icon" type="image/png" sizes="192x192"
-          href="static/nvkhuy-logo.png">
-    <link rel="apple-touch-icon" sizes="180x180"
-          href="static/nvkhuy-logo.png">
-    <link rel="icon" type="image/png" sizes="32x32"
-          href="static/nvkhuy-logo.png">
-    <link rel="icon" type="image/png" sizes="16x16"
-          href="static/nvkhuy-logo.png">
-    <title>nvkhuy games</title>
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
-    <!-- This site is optimized with the Yoast SEO plugin v21.5 - https://yoast.com/wordpress/plugins/seo/ -->
+    <!-- Favicon -->
+    <link rel="icon" href="static/nvkhuy-logo.png" type="image/png">
+    <link rel="icon" type="image/png" sizes="192x192" href="static/nvkhuy-logo.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="static/nvkhuy-logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="static/nvkhuy-logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="static/nvkhuy-logo.png">
+
+    <!-- SEO -->
+    <title>nvkhuy games — Fun Mobile Games</title>
+    <meta name="description" content="Discover fun mobile games by nvkhuy. Play Burger Defense and more — 1.5B+ downloads, 80M+ monthly active users.">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <link rel="canonical" href="https://fun.nvkhuy.com/">
+
+    <!-- Open Graph -->
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Homepage - nvkhuy game">
+    <meta property="og:title" content="nvkhuy games — Fun Mobile Games">
+    <meta property="og:description" content="Discover fun mobile games by nvkhuy. Play Burger Defense and more.">
     <meta property="og:url" content="https://fun.nvkhuy.com/">
-    <meta property="og:site_name" content="Freeplay">
-    <meta property="article:publisher" content="https://www.facebook.com/freeplayllc">
-    <meta property="article:modified_time" content="2024-03-27T15:06:08+00:00">
+    <meta property="og:site_name" content="nvkhuy games">
+
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@freeplaystudio">
-
-    <style id="wp-emoji-styles-inline-css" type="text/css">
-
-        img.wp-smiley, img.emoji {
-            display: inline !important;
-            border: none !important;
-            box-shadow: none !important;
-            height: 1em !important;
-            width: 1em !important;
-            margin: 0 0.07em !important;
-            vertical-align: -0.1em !important;
-            background: none !important;
-            padding: 0 !important;
-        }
-    </style>
-    <link rel="stylesheet" id="wp-block-library-css" href="./static/style.min.css" type="text/css" media="all">
-    <style id="classic-theme-styles-inline-css" type="text/css">
-        /*! This file is auto-generated */
-        .wp-block-button__link {
-            color: #fff;
-            background-color: #32373c;
-            border-radius: 9999px;
-            box-shadow: none;
-            text-decoration: none;
-            padding: calc(.667em + 2px) calc(1.333em + 2px);
-            font-size: 1.125em
-        }
-
-        .wp-block-file__button {
-            background: #32373c;
-            color: #fff;
-            text-decoration: none
-        }
-    </style>
-    <style id="global-styles-inline-css" type="text/css">
-        body {
-            --wp--preset--color--black: #000000;
-            --wp--preset--color--cyan-bluish-gray: #abb8c3;
-            --wp--preset--color--white: #ffffff;
-            --wp--preset--color--pale-pink: #f78da7;
-            --wp--preset--color--vivid-red: #cf2e2e;
-            --wp--preset--color--luminous-vivid-orange: #ff6900;
-            --wp--preset--color--luminous-vivid-amber: #fcb900;
-            --wp--preset--color--light-green-cyan: #7bdcb5;
-            --wp--preset--color--vivid-green-cyan: #00d084;
-            --wp--preset--color--pale-cyan-blue: #8ed1fc;
-            --wp--preset--color--vivid-cyan-blue: #0693e3;
-            --wp--preset--color--vivid-purple: #9b51e0;
-            --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
-            --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
-            --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
-            --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
-            --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
-            --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
-            --wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
-            --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
-            --wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
-            --wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
-            --wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
-            --wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
-            --wp--preset--font-size--small: 13px;
-            --wp--preset--font-size--medium: 20px;
-            --wp--preset--font-size--large: 36px;
-            --wp--preset--font-size--x-large: 42px;
-            --wp--preset--spacing--20: 0.44rem;
-            --wp--preset--spacing--30: 0.67rem;
-            --wp--preset--spacing--40: 1rem;
-            --wp--preset--spacing--50: 1.5rem;
-            --wp--preset--spacing--60: 2.25rem;
-            --wp--preset--spacing--70: 3.38rem;
-            --wp--preset--spacing--80: 5.06rem;
-            --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
-            --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
-            --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
-            --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
-            --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
-        }
-
-        :where(.is-layout-flex) {
-            gap: 0.5em;
-        }
-
-        :where(.is-layout-grid) {
-            gap: 0.5em;
-        }
-
-        body .is-layout-flex {
-            display: flex;
-        }
-
-        body .is-layout-flex {
-            flex-wrap: wrap;
-            align-items: center;
-        }
-
-        body .is-layout-flex > * {
-            margin: 0;
-        }
-
-        body .is-layout-grid {
-            display: grid;
-        }
-
-        body .is-layout-grid > * {
-            margin: 0;
-        }
-
-        :where(.wp-block-columns.is-layout-flex) {
-            gap: 2em;
-        }
-
-        :where(.wp-block-columns.is-layout-grid) {
-            gap: 2em;
-        }
-
-        :where(.wp-block-post-template.is-layout-flex) {
-            gap: 1.25em;
-        }
-
-        :where(.wp-block-post-template.is-layout-grid) {
-            gap: 1.25em;
-        }
-
-        .has-black-color {
-            color: var(--wp--preset--color--black) !important;
-        }
-
-        .has-cyan-bluish-gray-color {
-            color: var(--wp--preset--color--cyan-bluish-gray) !important;
-        }
-
-        .has-white-color {
-            color: var(--wp--preset--color--white) !important;
-        }
-
-        .has-pale-pink-color {
-            color: var(--wp--preset--color--pale-pink) !important;
-        }
-
-        .has-vivid-red-color {
-            color: var(--wp--preset--color--vivid-red) !important;
-        }
-
-        .has-luminous-vivid-orange-color {
-            color: var(--wp--preset--color--luminous-vivid-orange) !important;
-        }
-
-        .has-luminous-vivid-amber-color {
-            color: var(--wp--preset--color--luminous-vivid-amber) !important;
-        }
-
-        .has-light-green-cyan-color {
-            color: var(--wp--preset--color--light-green-cyan) !important;
-        }
-
-        .has-vivid-green-cyan-color {
-            color: var(--wp--preset--color--vivid-green-cyan) !important;
-        }
-
-        .has-pale-cyan-blue-color {
-            color: var(--wp--preset--color--pale-cyan-blue) !important;
-        }
-
-        .has-vivid-cyan-blue-color {
-            color: var(--wp--preset--color--vivid-cyan-blue) !important;
-        }
-
-        .has-vivid-purple-color {
-            color: var(--wp--preset--color--vivid-purple) !important;
-        }
-
-        .has-black-background-color {
-            background-color: var(--wp--preset--color--black) !important;
-        }
-
-        .has-cyan-bluish-gray-background-color {
-            background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
-        }
-
-        .has-white-background-color {
-            background-color: var(--wp--preset--color--white) !important;
-        }
-
-        .has-pale-pink-background-color {
-            background-color: var(--wp--preset--color--pale-pink) !important;
-        }
-
-        .has-vivid-red-background-color {
-            background-color: var(--wp--preset--color--vivid-red) !important;
-        }
-
-        .has-luminous-vivid-orange-background-color {
-            background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
-        }
-
-        .has-luminous-vivid-amber-background-color {
-            background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
-        }
-
-        .has-light-green-cyan-background-color {
-            background-color: var(--wp--preset--color--light-green-cyan) !important;
-        }
-
-        .has-vivid-green-cyan-background-color {
-            background-color: var(--wp--preset--color--vivid-green-cyan) !important;
-        }
-
-        .has-pale-cyan-blue-background-color {
-            background-color: var(--wp--preset--color--pale-cyan-blue) !important;
-        }
-
-        .has-vivid-cyan-blue-background-color {
-            background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
-        }
-
-        .has-vivid-purple-background-color {
-            background-color: var(--wp--preset--color--vivid-purple) !important;
-        }
-
-        .has-black-border-color {
-            border-color: var(--wp--preset--color--black) !important;
-        }
-
-        .has-cyan-bluish-gray-border-color {
-            border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
-        }
-
-        .has-white-border-color {
-            border-color: var(--wp--preset--color--white) !important;
-        }
-
-        .has-pale-pink-border-color {
-            border-color: var(--wp--preset--color--pale-pink) !important;
-        }
-
-        .has-vivid-red-border-color {
-            border-color: var(--wp--preset--color--vivid-red) !important;
-        }
-
-        .has-luminous-vivid-orange-border-color {
-            border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
-        }
-
-        .has-luminous-vivid-amber-border-color {
-            border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
-        }
-
-        .has-light-green-cyan-border-color {
-            border-color: var(--wp--preset--color--light-green-cyan) !important;
-        }
-
-        .has-vivid-green-cyan-border-color {
-            border-color: var(--wp--preset--color--vivid-green-cyan) !important;
-        }
-
-        .has-pale-cyan-blue-border-color {
-            border-color: var(--wp--preset--color--pale-cyan-blue) !important;
-        }
-
-        .has-vivid-cyan-blue-border-color {
-            border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
-        }
-
-        .has-vivid-purple-border-color {
-            border-color: var(--wp--preset--color--vivid-purple) !important;
-        }
-
-        .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
-            background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
-        }
-
-        .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
-            background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
-        }
-
-        .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
-            background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
-        }
-
-        .has-luminous-vivid-orange-to-vivid-red-gradient-background {
-            background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
-        }
-
-        .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
-            background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
-        }
-
-        .has-cool-to-warm-spectrum-gradient-background {
-            background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
-        }
-
-        .has-blush-light-purple-gradient-background {
-            background: var(--wp--preset--gradient--blush-light-purple) !important;
-        }
-
-        .has-blush-bordeaux-gradient-background {
-            background: var(--wp--preset--gradient--blush-bordeaux) !important;
-        }
-
-        .has-luminous-dusk-gradient-background {
-            background: var(--wp--preset--gradient--luminous-dusk) !important;
-        }
-
-        .has-pale-ocean-gradient-background {
-            background: var(--wp--preset--gradient--pale-ocean) !important;
-        }
-
-        .has-electric-grass-gradient-background {
-            background: var(--wp--preset--gradient--electric-grass) !important;
-        }
-
-        .has-midnight-gradient-background {
-            background: var(--wp--preset--gradient--midnight) !important;
-        }
-
-        .has-small-font-size {
-            font-size: var(--wp--preset--font-size--small) !important;
-        }
-
-        .has-medium-font-size {
-            font-size: var(--wp--preset--font-size--medium) !important;
-        }
-
-        .has-large-font-size {
-            font-size: var(--wp--preset--font-size--large) !important;
-        }
-
-        .has-x-large-font-size {
-            font-size: var(--wp--preset--font-size--x-large) !important;
-        }
-
-        .wp-block-navigation a:where(:not(.wp-element-button)) {
-            color: inherit;
-        }
-
-        :where(.wp-block-post-template.is-layout-flex) {
-            gap: 1.25em;
-        }
-
-        :where(.wp-block-post-template.is-layout-grid) {
-            gap: 1.25em;
-        }
-
-        :where(.wp-block-columns.is-layout-flex) {
-            gap: 2em;
-        }
-
-        :where(.wp-block-columns.is-layout-grid) {
-            gap: 2em;
-        }
-
-        .wp-block-pullquote {
-            font-size: 1.5em;
-            line-height: 1.6;
-        }
-    </style>
-    <link rel="stylesheet" id="contact-form-7-css" href="./static/styles.css" type="text/css" media="all">
-    <link rel="stylesheet" id="app-css" href="./static/index.d711e1.css" type="text/css" media="all">
-    <meta name="generator" content="WordPress 6.5.5">
-    <link rel="shortlink" href="https://fun.nvkhuy.com/">
-    <link rel="alternate" type="application/json+oembed"
-          href="http://fun.nvkhuy.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ffreeplay.io%2F">
-    <link rel="alternate" type="text/xml+oembed"
-          href="http://fun.nvkhuy.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ffreeplay.io%2F&amp;format=xml">
-    <style>@font-face {
-        font-family: swiper-icons;
-        font-style: normal;
-        font-weight: 400;
-        src: url("data:application/font-woff;charset=utf-8;base64, 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")
-    }
-
-    :root {
-        --swiper-theme-color: #007aff
-    }
-
-    :host {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        position: relative;
-        z-index: 1
-    }
-
-    .swiper {
-        display: block;
-        list-style: none;
-        margin-left: auto;
-        margin-right: auto;
-        overflow: hidden;
-        overflow: clip;
-        padding: 0;
-        position: relative;
-        z-index: 1
-    }
-
-    .swiper-vertical > .swiper-wrapper {
-        flex-direction: column
-    }
-
-    .swiper-wrapper {
-        box-sizing: content-box;
-        display: flex;
-        height: 100%;
-        position: relative;
-        transition-property: transform;
-        transition-timing-function: var(--swiper-wrapper-transition-timing-function, initial);
-        width: 100%;
-        z-index: 1
-    }
-
-    .swiper-android .swiper-slide, .swiper-ios .swiper-slide, .swiper-wrapper {
-        transform: translateZ(0)
-    }
-
-    .swiper-horizontal {
-        touch-action: pan-y
-    }
-
-    .swiper-vertical {
-        touch-action: pan-x
-    }
-
-    .swiper-slide {
-        display: block;
-        flex-shrink: 0;
-        height: 100%;
-        position: relative;
-        transition-property: transform;
-        width: 100%
-    }
-
-    .swiper-slide-invisible-blank {
-        visibility: hidden
-    }
-
-    .swiper-autoheight, .swiper-autoheight .swiper-slide {
-        height: auto
-    }
-
-    .swiper-autoheight .swiper-wrapper {
-        align-items: flex-start;
-        transition-property: transform, height
-    }
-
-    .swiper-backface-hidden .swiper-slide {
-        backface-visibility: hidden;
-        transform: translateZ(0)
-    }
-
-    .swiper-3d.swiper-css-mode .swiper-wrapper {
-        perspective: 1200px
-    }
-
-    .swiper-3d .swiper-wrapper {
-        transform-style: preserve-3d
-    }
-
-    .swiper-3d {
-        perspective: 1200px
-    }
-
-    .swiper-3d .swiper-cube-shadow, .swiper-3d .swiper-slide {
-        transform-style: preserve-3d
-    }
-
-    .swiper-css-mode > .swiper-wrapper {
-        -ms-overflow-style: none;
-        overflow: auto;
-        scrollbar-width: none
-    }
-
-    .swiper-css-mode > .swiper-wrapper::-webkit-scrollbar {
-        display: none
-    }
-
-    .swiper-css-mode > .swiper-wrapper > .swiper-slide {
-        scroll-snap-align: start start
-    }
-
-    .swiper-css-mode.swiper-horizontal > .swiper-wrapper {
-        scroll-snap-type: x mandatory
-    }
-
-    .swiper-css-mode.swiper-vertical > .swiper-wrapper {
-        scroll-snap-type: y mandatory
-    }
-
-    .swiper-css-mode.swiper-free-mode > .swiper-wrapper {
-        scroll-snap-type: none
-    }
-
-    .swiper-css-mode.swiper-free-mode > .swiper-wrapper > .swiper-slide {
-        scroll-snap-align: none
-    }
-
-    .swiper-css-mode.swiper-centered > .swiper-wrapper:before {
-        content: "";
-        flex-shrink: 0;
-        order: 9999
-    }
-
-    .swiper-css-mode.swiper-centered > .swiper-wrapper > .swiper-slide {
-        scroll-snap-align: center center;
-        scroll-snap-stop: always
-    }
-
-    .swiper-css-mode.swiper-centered.swiper-horizontal > .swiper-wrapper > .swiper-slide:first-child {
-        margin-inline-start: var(--swiper-centered-offset-before)
-    }
-
-    .swiper-css-mode.swiper-centered.swiper-horizontal > .swiper-wrapper:before {
-        height: 100%;
-        min-height: 1px;
-        width: var(--swiper-centered-offset-after)
-    }
-
-    .swiper-css-mode.swiper-centered.swiper-vertical > .swiper-wrapper > .swiper-slide:first-child {
-        margin-block-start: var(--swiper-centered-offset-before)
-    }
-
-    .swiper-css-mode.swiper-centered.swiper-vertical > .swiper-wrapper:before {
-        height: var(--swiper-centered-offset-after);
-        min-width: 1px;
-        width: 100%
-    }
-
-    .swiper-3d .swiper-slide-shadow, .swiper-3d .swiper-slide-shadow-bottom, .swiper-3d .swiper-slide-shadow-left, .swiper-3d .swiper-slide-shadow-right, .swiper-3d .swiper-slide-shadow-top {
-        height: 100%;
-        left: 0;
-        pointer-events: none;
-        position: absolute;
-        top: 0;
-        width: 100%;
-        z-index: 10
-    }
-
-    .swiper-3d .swiper-slide-shadow {
-        background: rgba(0, 0, 0, .15)
-    }
-
-    .swiper-3d .swiper-slide-shadow-left {
-        background-image: linear-gradient(270deg, rgba(0, 0, 0, .5), transparent)
-    }
-
-    .swiper-3d .swiper-slide-shadow-right {
-        background-image: linear-gradient(90deg, rgba(0, 0, 0, .5), transparent)
-    }
-
-    .swiper-3d .swiper-slide-shadow-top {
-        background-image: linear-gradient(0deg, rgba(0, 0, 0, .5), transparent)
-    }
-
-    .swiper-3d .swiper-slide-shadow-bottom {
-        background-image: linear-gradient(180deg, rgba(0, 0, 0, .5), transparent)
-    }
-
-    .swiper-lazy-preloader {
-        border: 4px solid var(--swiper-preloader-color, var(--swiper-theme-color));
-        border-radius: 50%;
-        border-top: 4px solid transparent;
-        box-sizing: border-box;
-        height: 42px;
-        left: 50%;
-        margin-left: -21px;
-        margin-top: -21px;
-        position: absolute;
-        top: 50%;
-        transform-origin: 50%;
-        width: 42px;
-        z-index: 10
-    }
-
-    .swiper-watch-progress .swiper-slide-visible .swiper-lazy-preloader, .swiper:not(.swiper-watch-progress) .swiper-lazy-preloader {
-        animation: swiper-preloader-spin 1s linear infinite
-    }
-
-    .swiper-lazy-preloader-white {
-        --swiper-preloader-color: #fff
-    }
-
-    .swiper-lazy-preloader-black {
-        --swiper-preloader-color: #000
-    }
-
-    @keyframes swiper-preloader-spin {
-        0% {
-            transform: rotate(0deg)
-        }
-        to {
-            transform: rotate(1turn)
-        }
-    }
-    </style>
-    <style>
-    </style>
+    <meta name="twitter:title" content="nvkhuy games — Fun Mobile Games">
+    <meta name="twitter:description" content="Discover fun mobile games by nvkhuy. Play Burger Defense and more.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Stylesheets (layered: tokens → base → layout → components → animations → page) -->
+    <link rel="stylesheet" href="static/css/tokens.css">
+    <link rel="stylesheet" href="static/css/base.css">
+    <link rel="stylesheet" href="static/css/layout.css">
+    <link rel="stylesheet" href="static/css/components.css">
+    <link rel="stylesheet" href="static/css/animations.css">
+    <link rel="stylesheet" href="static/css/pages/home.css">
 </head>
 
 <body>
-<header class="header">
-    <div class="header__container container">
-        <a href="./index.html" class="header__logo">
-            <img src="static/nvkhuy-icon.ico" alt="nvkhuy games icon">
+
+<!-- ===== Header ===== -->
+<header class="site-header">
+    <div class="container">
+        <a href="./index.html" class="logo-link logo-link--lg" aria-label="nvkhuy games — Home">
+            <img src="static/nvkhuy-icon.ico" alt="nvkhuy games logo" width="56" height="56">
         </a>
     </div>
 </header>
-<main class="home-page">
 
-    <section class="games" id="our-games-anchor">
-        <div class="games__background">
-            <div class="games__container">
-                <h3 class="games__title"></h3>
-                <div class="games__wrapper">
+<!-- ===== Main Content ===== -->
+<main>
 
+    <!-- Games -->
+    <section class="games-section" id="our-games" aria-labelledby="games-heading">
+        <div class="container">
+            <div class="games-section__inner anim-fade-up">
+                <h1 id="games-heading" class="section-title games-section__title">Our Games</h1>
+
+                <div class="grid-auto games-section__grid">
                     <a href="https://play.google.com/store/apps/details?id=nvkhuy.com.fatguydefense&hl=vi&gl=US"
                        target="_blank"
-                       class="games__item">
-                        <img src="./static/burger-defense.png" alt="Burger Defense" class="games__item-image">
-                        <span class="games__item-name">Burger Defense</span>
+                       rel="noopener noreferrer"
+                       class="game-card">
+                        <img src="./static/burger-defense.png"
+                             alt="Burger Defense — a fun tower defense game"
+                             class="game-card__image"
+                             width="160" height="160"
+                             loading="lazy">
+                        <span class="game-card__name">Burger Defense</span>
                     </a>
-
                 </div>
-                <a href="https://play.google.com/store/apps/dev?id=7775537027678361006&hl=vi&gl=US" target="_blank"
-                   class="games__button">More Games</a>
 
+                <div class="games-section__cta">
+                    <a href="https://play.google.com/store/apps/dev?id=7775537027678361006&hl=vi&gl=US"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="btn btn--primary">
+                        More Games
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
             </div>
         </div>
-
     </section>
 
-    <section class="nutshell">
+    <!-- Stats -->
+    <section class="stats-section" aria-labelledby="stats-heading">
         <div class="container">
-            <h3 class="nutshell__title">People love us</h3>
-            <div class="nutshell__wrapper">
-                <div class="nutshell__item nutshell-item">
-                    <img src="./static/download.png" alt="Icon" class="nutshell-item__image">
-                    <div class="nutshell__content">
-                        <div class="nutshell-item__text">
-                  <span class="nutshell-item__number">
-                    1.5B+                  </span>
-                            <br>
-                            <span class="nutshell-item__word">
-                    DOWNLOADS                  </span>
-                        </div>
-                        <div class="nutshell-item__separator"></div>
-                        <p class="nutshell-item__description"></p>
+            <h2 id="stats-heading" class="section-title stats-section__title">People Love Us</h2>
+
+            <div class="grid-cols-3">
+                <article class="stat-card anim-fade-up">
+                    <img src="./static/download.png" alt="Downloads icon" class="stat-card__icon" width="80" height="80" loading="lazy">
+                    <div class="stat-card__content">
+                        <span class="stat-card__number">1.5B+</span>
+                        <span class="stat-card__label">Downloads</span>
                     </div>
-                </div>
-                <div class="nutshell__item nutshell-item">
-                    <img src="./static/heart.png" alt="Icon" class="nutshell-item__image">
-                    <div class="nutshell__content">
-                        <div class="nutshell-item__text">
-                  <span class="nutshell-item__number">
-                    80M+                  </span>
-                            <br>
-                            <span class="nutshell-item__word">
-                    MAU                  </span>
-                        </div>
-                        <div class="nutshell-item__separator"></div>
-                        <p class="nutshell-item__description"></p>
+                    <hr class="stat-card__divider">
+                </article>
+
+                <article class="stat-card anim-fade-up anim-delay-1">
+                    <img src="./static/heart.png" alt="Monthly active users icon" class="stat-card__icon" width="80" height="80" loading="lazy">
+                    <div class="stat-card__content">
+                        <span class="stat-card__number">80M+</span>
+                        <span class="stat-card__label">MAU</span>
                     </div>
-                </div>
-                <div class="nutshell__item nutshell-item">
-                    <img src="./static/star.png" alt="Icon" class="nutshell-item__image">
-                    <div class="nutshell__content">
-                        <div class="nutshell-item__text">
-                  <span class="nutshell-item__number">
-                    #1                  </span>
-                            <br>
-                            <span class="nutshell-item__word">
-                    GAMES                  </span>
-                        </div>
-                        <div class="nutshell-item__separator"></div>
-                        <p class="nutshell-item__description"></p>
+                    <hr class="stat-card__divider">
+                </article>
+
+                <article class="stat-card anim-fade-up anim-delay-2">
+                    <img src="./static/star.png" alt="Number one games icon" class="stat-card__icon" width="80" height="80" loading="lazy">
+                    <div class="stat-card__content">
+                        <span class="stat-card__number">#1</span>
+                        <span class="stat-card__label">Games</span>
                     </div>
-                </div>
+                    <hr class="stat-card__divider">
+                </article>
             </div>
         </div>
     </section>
 
 </main>
 
-<footer class="footer">
-    <div class="container footer__container">
-        <a href="./index.html" class="footer__logo">
-            <img src="static/nvkhuy-icon.ico" alt="nvkhuy game logo">
+<!-- ===== Footer ===== -->
+<footer class="site-footer">
+    <div class="container stack">
+        <a href="./index.html" class="logo-link logo-link--sm" aria-label="nvkhuy games — Home">
+            <img src="static/nvkhuy-icon.ico" alt="nvkhuy games logo" width="44" height="44">
         </a>
-        <ul class="footer__links">
-            <li id="menu-item-528" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-528"><a
-                    href="./term-of-use/index.html">Terms of Use</a></li>
-            <li id="menu-item-531" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-531"><a
-                    href="./privacy-policy/index.html">Privacy Policy</a></li>
-            <li id="menu-item-532" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-532"><a
-                    href="mailto:khanhhuynguyenvu@gmail.com">Contact Us</a></li>
-            <li id="menu-item-611" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-611"><a
-                    href="mailto:khanhhuynguyenvu@gmail.com">Support</a></li>
-        </ul>
-        <span class="footer__copyright">© 2024 nvkhuy team. All rights reserved.</span>
+
+        <nav class="site-footer__nav" aria-label="Footer navigation">
+            <a href="./term-of-use/index.html">Terms of Use</a>
+            <a href="./privacy-policy/index.html">Privacy Policy</a>
+            <a href="mailto:khanhhuynguyenvu@gmail.com">Contact Us</a>
+            <a href="mailto:khanhhuynguyenvu@gmail.com">Support</a>
+        </nav>
+
+        <small class="site-footer__copy">© 2024 nvkhuy team. All rights reserved.</small>
     </div>
 </footer>
 

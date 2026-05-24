@@ -1,0 +1,59 @@
+/* =================================================================
+   LAYOUT (layout.css)
+   -----------------------------------------------------------------
+   Structural primitives: containers, grids, and flex utilities.
+   Single Responsibility: positioning & spacing — no visual styling.
+   Reusable across any page or section.
+   ================================================================= */
+
+/* --- Container --- */
+.container {
+    width: 100%;
+    max-width: var(--container-max);
+    margin-inline: auto;
+    padding-inline: var(--container-px);
+}
+
+/* --- Flex center (row) --- */
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* --- Auto-fit grid --- */
+.grid-auto {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(var(--grid-min, 140px), 1fr));
+    gap: var(--grid-gap, clamp(1.25rem, 3vw, 2rem));
+    justify-items: center;
+}
+
+/* --- Fixed-column grid --- */
+.grid-cols-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--grid-gap, clamp(1.25rem, 3vw, 2.5rem));
+}
+
+/* --- Stack (vertical flex) --- */
+.stack {
+    display: flex;
+    flex-direction: column;
+    gap: var(--stack-gap, 1.5rem);
+}
+
+/* --- Responsive overrides --- */
+@media (max-width: 768px) {
+    .grid-cols-3 {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin-inline: auto;
+    }
+}
+
+@media (max-width: 430px) {
+    .grid-auto {
+        --grid-min: 100px;
+    }
+}

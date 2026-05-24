@@ -1,0 +1,271 @@
+/* =================================================================
+   COMPONENTS (components.css)
+   -----------------------------------------------------------------
+   Self-contained, reusable UI components.
+   Each component:
+     - Has a single responsibility (its own visual + interaction)
+     - Is closed for modification, open for extension via modifiers
+     - Depends only on design-token abstractions (tokens.css)
+   ================================================================= */
+
+
+/* =================================================================
+   Component: Logo Link
+   ----------------------------------------------------------------- */
+.logo-link {
+    display: block;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    transition: transform var(--transition);
+}
+
+.logo-link:hover {
+    transform: scale(1.08);
+}
+
+.logo-link img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Size modifiers (Open/Closed — extend, don't edit base) */
+.logo-link--lg {
+    width: 56px;
+    height: 56px;
+}
+
+.logo-link--sm {
+    width: 44px;
+    height: 44px;
+    border-radius: var(--radius-sm);
+}
+
+
+/* =================================================================
+   Component: Section Title
+   ----------------------------------------------------------------- */
+.section-title {
+    font-size: clamp(1.5rem, 3.5vw, 2.2rem);
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: -0.02em;
+}
+
+
+/* =================================================================
+   Component: Button
+   ----------------------------------------------------------------- */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-family: var(--font-family);
+    font-weight: 600;
+    border: none;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition:
+        background var(--transition),
+        transform var(--transition),
+        box-shadow var(--transition);
+    width: fit-content;
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+/* Variant: primary (Open/Closed) */
+.btn--primary {
+    background: var(--color-accent);
+    color: var(--color-white);
+    font-size: clamp(0.875rem, 1.5vw, 1.125rem);
+    padding: 1rem 2.5rem;
+}
+
+.btn--primary:hover,
+.btn--primary:focus-visible {
+    background: var(--color-accent-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(88, 50, 193, 0.35);
+}
+
+/* Responsive */
+@media (max-width: 430px) {
+    .btn--primary {
+        padding: 0.875rem 2rem;
+    }
+}
+
+
+/* =================================================================
+   Component: Game Card
+   ----------------------------------------------------------------- */
+.game-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.5rem;
+    border-radius: var(--radius-md);
+    transition:
+        transform var(--transition),
+        box-shadow var(--transition);
+}
+
+.game-card:hover,
+.game-card:focus-visible {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: var(--shadow-hover);
+}
+
+.game-card__image {
+    width: clamp(100px, 18vw, 160px);
+    height: clamp(100px, 18vw, 160px);
+    border-radius: var(--radius-xl);
+    object-fit: cover;
+    transition: transform var(--transition);
+}
+
+.game-card:hover .game-card__image {
+    transform: scale(1.08);
+}
+
+.game-card__name {
+    font-size: clamp(0.85rem, 1.5vw, 1.125rem);
+    font-weight: 600;
+    text-align: center;
+    color: var(--color-text);
+}
+
+
+/* =================================================================
+   Component: Stat Card
+   ----------------------------------------------------------------- */
+.stat-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: clamp(1.5rem, 3vw, 2.5rem) 1rem;
+    border-radius: var(--radius-lg);
+    background: var(--color-bg-alt);
+    box-shadow: var(--shadow-card);
+    transition:
+        transform var(--transition),
+        box-shadow var(--transition);
+}
+
+.stat-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-hover);
+}
+
+.stat-card__icon {
+    width: clamp(48px, 8vw, 80px);
+    height: clamp(48px, 8vw, 80px);
+    margin-bottom: clamp(0.75rem, 2vw, 1.5rem);
+    object-fit: contain;
+}
+
+.stat-card__number {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    color: var(--color-accent);
+}
+
+.stat-card__label {
+    font-size: clamp(0.7rem, 1.2vw, 0.95rem);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-text-muted);
+    margin-top: 0.25rem;
+}
+
+.stat-card__divider {
+    width: 60%;
+    max-width: 140px;
+    height: 1px;
+    background: var(--color-border);
+    margin: clamp(0.75rem, 2vw, 1.25rem) auto;
+    border: none;
+}
+
+/* Stat Card — tablet: horizontal layout */
+@media (max-width: 768px) {
+    .stat-card {
+        flex-direction: row;
+        text-align: left;
+        gap: 1.25rem;
+        padding: 1.25rem 1.5rem;
+    }
+
+    .stat-card__icon {
+        margin-bottom: 0;
+        flex-shrink: 0;
+    }
+
+    .stat-card__divider {
+        display: none;
+    }
+
+    .stat-card__content {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+/* =================================================================
+   Component: Site Header
+   ----------------------------------------------------------------- */
+.site-header {
+    padding-block: clamp(0.75rem, 2vw, 1.375rem);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.site-header > .container {
+    display: flex;
+    align-items: center;
+}
+
+
+/* =================================================================
+   Component: Site Footer
+   ----------------------------------------------------------------- */
+.site-footer {
+    border-top: 1px solid var(--color-border);
+    padding-block: clamp(1.5rem, 3vw, 2rem);
+    margin-top: auto;
+}
+
+.site-footer__nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.5rem;
+}
+
+.site-footer__nav a {
+    font-size: 0.8125rem;
+    font-weight: 600;
+    color: var(--color-text);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: color var(--transition);
+}
+
+.site-footer__nav a:hover,
+.site-footer__nav a:focus-visible {
+    color: var(--color-accent);
+}
+
+.site-footer__copy {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--color-copyright);
+}

@@ -1,0 +1,44 @@
+/* =================================================================
+   HOME PAGE (pages/home.css)
+   -----------------------------------------------------------------
+   Page-specific spacing & composition for the homepage.
+   Single Responsibility: arranges reusable components into sections.
+   This file should NEVER define reusable visual styles — those
+   belong in components.css.
+   ================================================================= */
+
+/* --- Games section --- */
+.games-section {
+    padding-block: clamp(2.5rem, 6vw, 5rem);
+}
+
+.games-section__inner {
+    background: var(--color-bg-alt);
+    border-radius: var(--radius-lg);
+    padding: clamp(2rem, 5vw, 3.5rem) clamp(1.25rem, 4vw, 2.5rem) clamp(2.5rem, 6vw, 5.5rem);
+    max-width: 960px;
+    margin-inline: auto;
+    box-shadow: var(--shadow-card);
+}
+
+.games-section__title {
+    margin-bottom: clamp(2rem, 5vw, 4rem);
+}
+
+.games-section__grid {
+    margin-bottom: clamp(1.5rem, 4vw, 3.5rem);
+}
+
+.games-section__cta {
+    display: flex;
+    justify-content: center;
+}
+
+/* --- Stats section --- */
+.stats-section {
+    padding-block: clamp(3rem, 7vw, 6.5rem);
+}
+
+.stats-section__title {
+    margin-bottom: clamp(2.5rem, 5vw, 4.5rem);
+}
