@@ -8,34 +8,17 @@
     <link rel="icon" href="static/nvkhuy-logo.png" type="image/png">
     <link rel="icon" type="image/png" sizes="192x192" href="static/nvkhuy-logo.png">
     <link rel="apple-touch-icon" sizes="180x180" href="static/nvkhuy-logo.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="static/nvkhuy-logo.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="static/nvkhuy-logo.png">
 
     <!-- SEO -->
-    <title>nvkhuy games — Fun Mobile Games</title>
-    <meta name="description" content="Discover fun mobile games by nvkhuy. Play Burger Defense and more — 1.5B+ downloads, 80M+ monthly active users.">
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-    <link rel="canonical" href="https://fun.nvkhuy.com/">
-
-    <!-- Open Graph -->
-    <meta property="og:locale" content="en_US">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="nvkhuy games — Fun Mobile Games">
-    <meta property="og:description" content="Discover fun mobile games by nvkhuy. Play Burger Defense and more.">
-    <meta property="og:url" content="https://fun.nvkhuy.com/">
-    <meta property="og:site_name" content="nvkhuy games">
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="nvkhuy games — Fun Mobile Games">
-    <meta name="twitter:description" content="Discover fun mobile games by nvkhuy. Play Burger Defense and more.">
-
+    <title>nvkhuy games — Epic Fun Mobile Games</title>
+    <meta name="description" content="Discover fun mobile games by nvkhuy. Play Loop Sort, Animal Sort, Fruit Merge, Flower Sort and more.">
+    
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Luckiest+Guy&display=swap" rel="stylesheet">
 
-    <!-- Stylesheets (layered: tokens → base → layout → components → animations → page) -->
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="static/css/tokens.css">
     <link rel="stylesheet" href="static/css/base.css">
     <link rel="stylesheet" href="static/css/layout.css">
@@ -46,108 +29,113 @@
 
 <body>
 
-<!-- ===== Header ===== -->
 <header class="site-header">
-    <div class="container">
+    <div class="container flex-between">
         <a href="./index.html" class="logo-link logo-link--lg" aria-label="nvkhuy games — Home">
-            <img src="static/nvkhuy-icon.ico" alt="nvkhuy games logo" width="56" height="56">
+            <img src="static/nvkhuy-logo.png" alt="nvkhuy games logo" width="64" height="64">
         </a>
+        <nav class="site-footer__nav" style="margin-bottom: 0;">
+             <a href="#android-games">Android</a>
+             <a href="#ios-games">iOS</a>
+             <a href="mailto:khanhhuynguyenvu@gmail.com">Contact</a>
+        </nav>
     </div>
 </header>
 
-<!-- ===== Main Content ===== -->
 <main>
-
-    <!-- Games -->
-    <section class="games-section" id="our-games" aria-labelledby="games-heading">
-        <div class="container">
-            <div class="games-section__inner anim-fade-up">
-                <h1 id="games-heading" class="section-title games-section__title">Our Games</h1>
-
-                <div class="grid-auto games-section__grid">
-                    <a href="https://play.google.com/store/apps/details?id=nvkhuy.com.fatguydefense&hl=vi&gl=US"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       class="game-card">
-                        <img src="./static/burger-defense.png"
-                             alt="Burger Defense — a fun tower defense game"
-                             class="game-card__image"
-                             width="160" height="160"
-                             loading="lazy">
-                        <span class="game-card__name">Burger Defense</span>
-                    </a>
-                </div>
-
-                <div class="games-section__cta">
-                    <a href="https://play.google.com/store/apps/dev?id=7775537027678361006&hl=vi&gl=US"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       class="btn btn--primary">
-                        More Games
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                            <path d="M5 12h14M12 5l7 7-7 7"/>
-                        </svg>
-                    </a>
-                </div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container anim-fade-up">
+            <h1 class="hero__title anim-float">NVKHUY GAMES</h1>
+            <p class="hero__subtitle">Fun & Tap Game</p>
+            <div class="hero__btns">
+                <a href="#android-games" class="btn btn--primary">Android Games</a>
+                <a href="#ios-games" class="btn btn--secondary">iOS Games</a>
             </div>
         </div>
     </section>
 
-    <!-- Stats -->
-    <section class="stats-section" aria-labelledby="stats-heading">
-        <div class="container">
-            <h2 id="stats-heading" class="section-title stats-section__title">People Love Us</h2>
-
-            <div class="grid-cols-3">
-                <article class="stat-card anim-fade-up">
-                    <img src="./static/download.png" alt="Downloads icon" class="stat-card__icon" width="80" height="80" loading="lazy">
-                    <div class="stat-card__content">
-                        <span class="stat-card__number">1.5B+</span>
-                        <span class="stat-card__label">Downloads</span>
-                    </div>
-                    <hr class="stat-card__divider">
-                </article>
-
-                <article class="stat-card anim-fade-up anim-delay-1">
-                    <img src="./static/heart.png" alt="Monthly active users icon" class="stat-card__icon" width="80" height="80" loading="lazy">
-                    <div class="stat-card__content">
-                        <span class="stat-card__number">80M+</span>
-                        <span class="stat-card__label">MAU</span>
-                    </div>
-                    <hr class="stat-card__divider">
-                </article>
-
-                <article class="stat-card anim-fade-up anim-delay-2">
-                    <img src="./static/star.png" alt="Number one games icon" class="stat-card__icon" width="80" height="80" loading="lazy">
-                    <div class="stat-card__content">
-                        <span class="stat-card__number">#1</span>
-                        <span class="stat-card__label">Games</span>
-                    </div>
-                    <hr class="stat-card__divider">
-                </article>
+    <!-- Android Games Section -->
+    <section class="games-section" id="android-games">
+        <div class="container anim-fade-up anim-delay-1">
+            <h2 class="section-title">Android Games</h2>
+            <div class="grid-auto" id="android-grid">
+                <!-- Loaded from static.json -->
+            </div>
+            <div class="games-section__cta">
+                <a href="#" id="android-dev-link" target="_blank" rel="noopener noreferrer" class="btn btn--secondary">
+                    View All on Google Play
+                </a>
             </div>
         </div>
     </section>
 
+    <!-- iOS Games Section -->
+    <section class="games-section" id="ios-games" style="background: var(--color-bg-alt);">
+        <div class="container anim-fade-up anim-delay-2">
+            <h2 class="section-title">iOS Games</h2>
+            <div class="grid-auto" id="ios-grid">
+                <!-- Loaded from static.json -->
+            </div>
+            <div class="games-section__cta">
+                <a href="#" id="ios-dev-link" target="_blank" rel="noopener noreferrer" class="btn btn--primary">
+                    View All on App Store
+                </a>
+            </div>
+        </div>
+    </section>
 </main>
 
-<!-- ===== Footer ===== -->
 <footer class="site-footer">
-    <div class="container stack">
-        <a href="./index.html" class="logo-link logo-link--sm" aria-label="nvkhuy games — Home">
-            <img src="static/nvkhuy-icon.ico" alt="nvkhuy games logo" width="44" height="44">
-        </a>
-
-        <nav class="site-footer__nav" aria-label="Footer navigation">
+    <div class="container stack stack--lg">
+        <div class="flex-center">
+            <a href="./index.html" class="logo-link logo-link--sm">
+                <img src="static/nvkhuy-logo.png" alt="nvkhuy games" width="48" height="48">
+            </a>
+        </div>
+        <nav class="site-footer__nav">
             <a href="./term-of-use/index.html">Terms of Use</a>
             <a href="./privacy-policy/index.html">Privacy Policy</a>
-            <a href="mailto:khanhhuynguyenvu@gmail.com">Contact Us</a>
             <a href="mailto:khanhhuynguyenvu@gmail.com">Support</a>
         </nav>
-
-        <small class="site-footer__copy">© 2024 nvkhuy team. All rights reserved.</small>
+        <p class="site-footer__copy">© 2024 nvkhuy games. Made with 🕹️ for players everywhere.</p>
     </div>
 </footer>
+
+<script>
+    async function loadGames() {
+        try {
+            const response = await fetch('static/games.json');
+            const data = await response.json();
+
+            // Setup Android
+            const androidGrid = document.getElementById('android-grid');
+            document.getElementById('android-dev-link').href = data.android.developer_url;
+            androidGrid.innerHTML = data.android.games.map(game => createGameCard(game, 'Android')).join('');
+
+            // Setup iOS
+            const iosGrid = document.getElementById('ios-grid');
+            document.getElementById('ios-dev-link').href = data.ios.developer_url;
+            iosGrid.innerHTML = data.ios.games.map(game => createGameCard(game, 'iOS')).join('');
+
+        } catch (error) {
+            console.error('Error loading games:', error);
+        }
+    }
+
+    function createGameCard(game, platform) {
+        const badgeClass = platform.toLowerCase() === 'ios' ? 'platform-badge--ios' : '';
+        return `
+            <a href="${game.url}" target="_blank" rel="noopener noreferrer" class="game-card">
+                <div class="platform-badge ${badgeClass}">${platform}</div>
+                <img src="${game.image}" alt="${game.name}" class="game-card__image" loading="lazy">
+                <span class="game-card__name">${game.name}</span>
+            </a>
+        `;
+    }
+
+    loadGames();
+</script>
 
 </body>
 </html>

@@ -2,7 +2,6 @@
    BASE (base.css)
    -----------------------------------------------------------------
    Global reset, element defaults, and accessibility foundations.
-   Single Responsibility: only handles raw-element styling.
    ================================================================= */
 
 /* --- Reset --- */
@@ -21,6 +20,7 @@ ul, ol {
 a {
     text-decoration: none;
     color: inherit;
+    transition: var(--transition-fast);
 }
 
 img {
@@ -39,16 +39,30 @@ html {
 body {
     background-color: var(--color-bg);
     color: var(--color-text);
-    font-family: var(--font-family);
-    line-height: 1.5;
+    font-family: var(--font-body);
+    line-height: 1.6;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    line-height: 1.1;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
 }
 
 /* --- Accessibility: focus ring --- */
 :focus-visible {
-    outline: 3px solid var(--color-accent);
+    outline: 3px solid var(--color-secondary);
     outline-offset: 3px;
     border-radius: var(--radius-sm);
+}
+
+/* --- Selection --- */
+::selection {
+    background-color: var(--color-primary);
+    color: var(--color-white);
 }

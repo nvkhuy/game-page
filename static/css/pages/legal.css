@@ -1,164 +1,118 @@
 /* =================================================================
    LEGAL PAGE (pages/legal.css)
    -----------------------------------------------------------------
-   Shared styles for legal/prose pages (Terms of Use, Privacy Policy).
-   Single Responsibility: typography & spacing for long-form text.
-   Reused by any page that wraps content in .legal-page.
+   Shared styles for legal/prose pages.
    ================================================================= */
 
 /* --- Page wrapper --- */
 .legal-page {
-    padding-top: clamp(2.5rem, 5vw, 4rem);
-    padding-bottom: clamp(5rem, 12vw, 12rem);
+    padding-top: clamp(4rem, 8vw, 6rem);
+    padding-bottom: clamp(6rem, 15vw, 10rem);
 }
 
 /* --- Page title --- */
 .legal-page__title {
-    font-size: clamp(1.75rem, 4vw, 3rem);
-    font-weight: 700;
-    line-height: 1.25;
-    margin-bottom: clamp(1rem, 2vw, 2rem);
-    letter-spacing: -0.02em;
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    margin-bottom: 0.5rem;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* --- Publish / last-updated date --- */
 .legal-page__date {
     font-size: 0.875rem;
-    font-weight: 500;
+    font-weight: 600;
     color: var(--color-text-muted);
-    margin-bottom: clamp(2rem, 4vw, 3.5rem);
+    margin-bottom: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
 }
 
-/* --- Section (each roman-numeral block) --- */
+/* --- Section --- */
 .legal-section {
-    margin-bottom: clamp(2rem, 4vw, 3rem);
-}
-
-.legal-section:last-child {
-    margin-bottom: 0;
+    margin-bottom: 3rem;
 }
 
 /* --- Headings inside legal content --- */
 .legal-page h2 {
-    font-size: clamp(1.15rem, 2vw, 1.5rem);
-    font-weight: 700;
-    margin-bottom: 1rem;
-    margin-top: 0.5rem;
-    letter-spacing: -0.01em;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    color: var(--color-secondary);
+    margin-bottom: 1.5rem;
+    margin-top: 2.5rem;
 }
 
 .legal-page h3 {
-    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    font-size: 1.25rem;
+    color: var(--color-white);
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    text-transform: none;
+    font-family: var(--font-body);
     font-weight: 700;
-    margin-bottom: 0.75rem;
-    margin-top: 1.5rem;
 }
 
 /* --- Paragraphs --- */
 .legal-page p {
-    font-size: clamp(0.875rem, 1.2vw, 1rem);
-    line-height: 1.75;
-    margin-bottom: 1rem;
-    color: var(--color-text);
-}
-
-.legal-page p:last-child {
-    margin-bottom: 0;
+    margin-bottom: 1.25rem;
+    color: var(--color-text-muted);
 }
 
 /* --- Links inside content --- */
 .legal-page a {
-    color: var(--color-accent);
+    color: var(--color-secondary);
     text-decoration: underline;
-    text-underline-offset: 3px;
-    transition: color var(--transition);
-    word-break: break-word;
+    transition: color var(--transition-fast);
 }
 
-.legal-page a:hover,
-.legal-page a:focus-visible {
-    color: var(--color-accent-hover);
+.legal-page a:hover {
+    color: var(--color-secondary-hover);
 }
 
 /* --- Lists --- */
-.legal-page ul,
-.legal-page ol {
-    margin-bottom: 1rem;
-    padding-left: 1.5rem;
-}
-
 .legal-page ul {
     list-style: disc;
-}
-
-.legal-page ul ul {
-    list-style: circle;
-    margin-top: 0.5rem;
-}
-
-.legal-page ul ul ul {
-    list-style: square;
-}
-
-.legal-page ol {
-    list-style: decimal;
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+    color: var(--color-text-muted);
 }
 
 .legal-page li {
-    font-size: clamp(0.875rem, 1.2vw, 1rem);
-    line-height: 1.75;
     margin-bottom: 0.5rem;
-}
-
-.legal-page li:last-child {
-    margin-bottom: 0;
-}
-
-/* --- Strong text --- */
-.legal-page strong {
-    font-weight: 700;
 }
 
 /* --- Tables --- */
 .legal-page table {
     width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 1.5rem;
-    font-size: clamp(0.8rem, 1.1vw, 0.95rem);
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-block: 2rem;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    border: 1px solid var(--color-border);
+    background: var(--color-bg-alt);
 }
 
 .legal-page th,
 .legal-page td {
+    padding: 1rem 1.5rem;
     border: 1px solid var(--color-border);
-    padding: 0.75rem 1rem;
     text-align: left;
-    vertical-align: top;
-    line-height: 1.6;
 }
 
 .legal-page th {
-    font-weight: 700;
-    background: var(--color-bg-alt);
-}
-
-.legal-page thead th {
-    background: var(--color-bg-alt);
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--color-white);
+    font-family: var(--font-heading);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
 }
 
 /* --- Copyright line at bottom --- */
 .legal-page__copyright {
-    font-size: 0.8125rem;
-    color: var(--color-text-muted);
-    margin-top: clamp(2rem, 4vw, 3rem);
-    padding-top: 1.5rem;
+    margin-top: 4rem;
+    padding-top: 2rem;
     border-top: 1px solid var(--color-border);
-}
-
-/* --- Responsive: small screens --- */
-@media (max-width: 640px) {
-    .legal-page table {
-        display: block;
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch;
-    }
+    text-align: center;
+    color: var(--color-text-muted);
 }

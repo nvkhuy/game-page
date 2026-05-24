@@ -2,43 +2,96 @@
    HOME PAGE (pages/home.css)
    -----------------------------------------------------------------
    Page-specific spacing & composition for the homepage.
-   Single Responsibility: arranges reusable components into sections.
-   This file should NEVER define reusable visual styles — those
-   belong in components.css.
    ================================================================= */
 
-/* --- Games section --- */
-.games-section {
-    padding-block: clamp(2.5rem, 6vw, 5rem);
+/* --- Hero Section --- */
+.hero {
+    position: relative;
+    padding-block: clamp(3rem, 10vw, 6rem); /* Reduced vertical padding */
+    text-align: center;
+    overflow: hidden;
 }
 
-.games-section__inner {
-    background: var(--color-bg-alt);
-    border-radius: var(--radius-lg);
-    padding: clamp(2rem, 5vw, 3.5rem) clamp(1.25rem, 4vw, 2.5rem) clamp(2.5rem, 6vw, 5.5rem);
-    max-width: 960px;
+.hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(112, 0, 255, 0.12) 0%, transparent 60%);
+    z-index: -1;
+}
+
+.hero__title {
+    font-size: clamp(2.5rem, 8vw, 5rem); /* Slightly smaller title */
+    margin-bottom: 0.75rem;
+    background: linear-gradient(135deg, var(--color-white) 30%, var(--color-secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.5));
+}
+
+.hero__subtitle {
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
+    color: var(--color-text-muted);
+    max-width: 500px;
     margin-inline: auto;
-    box-shadow: var(--shadow-card);
+    margin-bottom: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
 }
 
-.games-section__title {
-    margin-bottom: clamp(2rem, 5vw, 4rem);
+.hero__btns {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
-.games-section__grid {
-    margin-bottom: clamp(1.5rem, 4vw, 3.5rem);
+/* Hide hero buttons on mobile for a cleaner start */
+@media (max-width: 600px) {
+    .hero {
+        padding-block: 4rem 2rem;
+    }
+    
+    .hero__btns {
+        display: none;
+    }
+
+    .hero__subtitle {
+        margin-bottom: 0;
+    }
+}
+
+/* --- Games Section --- */
+.games-section {
+    padding-block: var(--section-spacing);
+}
+
+.games-grid {
+    --grid-min: 280px;
 }
 
 .games-section__cta {
-    display: flex;
-    justify-content: center;
+    margin-top: 4rem;
+    text-align: center;
 }
 
-/* --- Stats section --- */
+/* --- Stats Section --- */
 .stats-section {
-    padding-block: clamp(3rem, 7vw, 6.5rem);
+    padding-block: var(--section-spacing);
+    background: var(--color-bg-alt);
+    position: relative;
 }
 
-.stats-section__title {
-    margin-bottom: clamp(2.5rem, 5vw, 4.5rem);
+.stats-section::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, var(--color-bg), transparent);
 }

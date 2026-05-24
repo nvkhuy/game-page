@@ -2,8 +2,6 @@
    LAYOUT (layout.css)
    -----------------------------------------------------------------
    Structural primitives: containers, grids, and flex utilities.
-   Single Responsibility: positioning & spacing — no visual styling.
-   Reusable across any page or section.
    ================================================================= */
 
 /* --- Container --- */
@@ -14,26 +12,40 @@
     padding-inline: var(--container-px);
 }
 
-/* --- Flex center (row) --- */
+/* --- Flex Utilities --- */
 .flex-center {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 /* --- Auto-fit grid --- */
 .grid-auto {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(var(--grid-min, 140px), 1fr));
-    gap: var(--grid-gap, clamp(1.25rem, 3vw, 2rem));
-    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(var(--grid-min, 160px), 280px));
+    gap: var(--grid-gap, clamp(1rem, 3vw, 2rem));
+    justify-content: center; /* Center items if they don't fill the row */
+}
+
+@media (max-width: 600px) {
+    .grid-auto {
+        --grid-min: 100px;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: start;
+    }
 }
 
 /* --- Fixed-column grid --- */
 .grid-cols-3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: var(--grid-gap, clamp(1.25rem, 3vw, 2.5rem));
+    gap: var(--grid-gap, clamp(1.5rem, 4vw, 3rem));
 }
 
 /* --- Stack (vertical flex) --- */
@@ -43,17 +55,24 @@
     gap: var(--stack-gap, 1.5rem);
 }
 
+.stack--lg {
+    --stack-gap: clamp(2rem, 5vw, 4rem);
+}
+
+/* --- Section Spacing --- */
+.section-padding {
+    padding-block: var(--section-spacing);
+}
+
 /* --- Responsive overrides --- */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     .grid-cols-3 {
-        grid-template-columns: 1fr;
-        max-width: 400px;
-        margin-inline: auto;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (max-width: 430px) {
-    .grid-auto {
-        --grid-min: 100px;
+@media (max-width: 768px) {
+    .grid-cols-3 {
+        grid-template-columns: 1fr;
     }
 }
