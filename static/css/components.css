@@ -218,6 +218,12 @@
         max-width: none;
     }
     
+    .game-card::before {
+        width: 60px;
+        height: 18px;
+        top: -10px;
+    }
+    
     .game-card__name {
         font-size: 0.95rem;
     }
@@ -283,6 +289,35 @@
     position: sticky;
     top: 0;
     z-index: 100;
+}
+
+.site-header__nav {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.site-header__nav a {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-text);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+.site-header__nav a:hover {
+    color: var(--color-primary);
+    text-decoration: line-through; /* Playful line-through hover */
+}
+
+@media (max-width: 600px) {
+    .site-header__nav {
+        gap: 0.85rem;
+    }
+    .site-header__nav a {
+        font-size: 1.05rem;
+    }
 }
 
 .site-footer {

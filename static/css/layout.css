@@ -35,9 +35,10 @@
 
 @media (max-width: 600px) {
     .grid-auto {
-        --grid-min: 100px;
-        grid-template-columns: repeat(3, 1fr);
-        justify-content: start;
+        --grid-min: 120px;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        gap: 1.5rem 1rem;
     }
 }
 

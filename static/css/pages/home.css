@@ -19,7 +19,7 @@
 }
 
 .hero__title {
-    font-size: clamp(3rem, 10vw, 6rem); /* Large handwritten header */
+    font-size: clamp(2.25rem, 8vw, 5.5rem); /* Scaled down for mobile fit */
     margin-bottom: 1rem;
     color: var(--color-text);
     font-family: var(--font-heading);
