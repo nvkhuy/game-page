@@ -6,48 +6,48 @@
 
 :root {
     /* --- Color Palette --- */
-    --color-bg:            #0f0a1e; /* Deep Midnight Purple */
-    --color-bg-alt:        #1a1435;
-    --color-bg-card:       rgba(255, 255, 255, 0.05);
+    --color-bg:            #fdfbf7; /* Warm Paper */
+    --color-bg-alt:        #e5e0d8; /* Old Paper / Erased Pencil */
+    --color-bg-card:       #ffffff; /* White Paper Card */
     
-    --color-text:          #ffffff;
-    --color-text-muted:    #a099c5;
+    --color-text:          #2d2d2d; /* Soft Pencil Black */
+    --color-text-muted:    #6b6860; /* Erased Pencil Muted */
     
-    --color-primary:       #ff2d75; /* Neon Pink */
-    --color-primary-hover: #ff5c96;
+    --color-primary:       #ff4d4d; /* Red Correction Marker */
+    --color-primary-hover: #e03535;
     
-    --color-secondary:     #00f2ff; /* Cyan */
-    --color-secondary-hover:#5df7ff;
+    --color-secondary:     #2d5da1; /* Blue Ballpoint Pen */
+    --color-secondary-hover:#1e4680;
     
-    --color-accent:        #7000ff; /* Electric Purple */
-    --color-border:        rgba(255, 255, 255, 0.1);
+    --color-accent:        #ffcd29; /* Highlight Marker Yellow */
+    --color-border:        #2d2d2d; /* Pencil Lead */
     --color-white:         #ffffff;
 
     /* --- Typography --- */
-    --font-heading:        'Luckiest Guy', system-ui, sans-serif;
-    --font-body:           'Inter', system-ui, -apple-system, sans-serif;
+    --font-heading:        'Kalam', cursive, system-ui, sans-serif;
+    --font-body:           'Patrick Hand', cursive, system-ui, sans-serif;
 
     /* --- Border Radius --- */
-    --radius-sm:           12px;
-    --radius-md:           20px;
-    --radius-lg:           32px;
-    --radius-xl:           40px;
-    --radius-full:         9999px;
+    --radius-sm:           255px 15px 225px 15px / 15px 225px 15px 255px; /* wobbly sm */
+    --radius-md:           255px 20px 225px 20px / 20px 225px 20px 255px; /* wobbly md */
+    --radius-lg:           255px 30px 225px 30px / 30px 225px 30px 255px; /* wobbly lg */
+    --radius-xl:           255px 40px 225px 40px / 40px 225px 40px 255px; /* wobbly xl */
+    --radius-full:         50% 50% 50% 50% / 60% 40% 60% 40%; /* wobbly circle/oval */
 
-    /* --- Shadows --- */
-    --shadow-sm:           0 4px 12px rgba(0, 0, 0, 0.2);
-    --shadow-md:           0 8px 24px rgba(0, 0, 0, 0.3);
-    --shadow-lg:           0 16px 48px rgba(0, 0, 0, 0.4);
-    --shadow-primary:      0 0 20px rgba(255, 45, 117, 0.4);
-    --shadow-secondary:    0 0 20px rgba(0, 242, 255, 0.4);
+    /* --- Shadows (Hard Offset) --- */
+    --shadow-sm:           2px 2px 0px 0px #2d2d2d;
+    --shadow-md:           4px 4px 0px 0px #2d2d2d;
+    --shadow-lg:           8px 8px 0px 0px #2d2d2d;
+    --shadow-primary:      6px 6px 0px 0px #2d2d2d;
+    --shadow-secondary:    6px 6px 0px 0px #2d2d2d;
 
     /* --- Motion --- */
-    --transition-fast:     0.2s ease;
-    --transition-base:     0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    --transition-slow:     0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-fast:     0.1s ease;
+    --transition-base:     0.15s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow:     0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     /* --- Layout --- */
-    --container-max:       1140px;
-    --container-px:        clamp(1.5rem, 6vw, 5rem);
-    --section-spacing:     clamp(4rem, 10vw, 8rem);
+    --container-max:       1020px; /* Keep it contained like a sketchbook */
+    --container-px:        clamp(1.5rem, 6vw, 3rem);
+    --section-spacing:     clamp(3rem, 8vw, 6rem);
 }

@@ -1,7 +1,7 @@
 /* =================================================================
    LEGAL PAGE (pages/legal.css)
    -----------------------------------------------------------------
-   Shared styles for legal/prose pages.
+   Shared styles for legal/prose pages in sketch style.
    ================================================================= */
 
 /* --- Page wrapper --- */
@@ -14,19 +14,20 @@
 .legal-page__title {
     font-size: clamp(2.5rem, 6vw, 4rem);
     margin-bottom: 0.5rem;
-    background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--color-text);
+    font-family: var(--font-heading);
+    font-weight: 700;
 }
 
 /* --- Publish / last-updated date --- */
 .legal-page__date {
-    font-size: 0.875rem;
-    font-weight: 600;
+    font-size: 0.95rem;
+    font-weight: 700;
     color: var(--color-text-muted);
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
+    font-family: var(--font-heading);
 }
 
 /* --- Section --- */
@@ -36,37 +37,38 @@
 
 /* --- Headings inside legal content --- */
 .legal-page h2 {
-    font-size: clamp(1.5rem, 3vw, 2rem);
-    color: var(--color-secondary);
-    margin-bottom: 1.5rem;
+    font-size: clamp(1.75rem, 3vw, 2.25rem);
+    color: var(--color-secondary); /* Blue Ballpoint Pen */
+    margin-bottom: 1.25rem;
     margin-top: 2.5rem;
 }
 
 .legal-page h3 {
-    font-size: 1.25rem;
-    color: var(--color-white);
+    font-size: 1.4rem;
+    color: var(--color-text);
     margin-bottom: 1rem;
     margin-top: 2rem;
     text-transform: none;
-    font-family: var(--font-body);
+    font-family: var(--font-heading);
     font-weight: 700;
 }
 
 /* --- Paragraphs --- */
 .legal-page p {
     margin-bottom: 1.25rem;
-    color: var(--color-text-muted);
+    color: var(--color-text);
 }
 
 /* --- Links inside content --- */
 .legal-page a {
     color: var(--color-secondary);
     text-decoration: underline;
+    font-weight: 700;
     transition: color var(--transition-fast);
 }
 
 .legal-page a:hover {
-    color: var(--color-secondary-hover);
+    color: var(--color-primary);
 }
 
 /* --- Lists --- */
@@ -74,7 +76,7 @@
     list-style: disc;
     margin-bottom: 1.5rem;
     padding-left: 1.5rem;
-    color: var(--color-text-muted);
+    color: var(--color-text);
 }
 
 .legal-page li {
@@ -89,30 +91,42 @@
     margin-block: 2rem;
     border-radius: var(--radius-md);
     overflow: hidden;
-    border: 1px solid var(--color-border);
-    background: var(--color-bg-alt);
+    border: 3px solid var(--color-border);
+    background: var(--color-bg-card);
+    box-shadow: var(--shadow-sm);
 }
 
 .legal-page th,
 .legal-page td {
     padding: 1rem 1.5rem;
-    border: 1px solid var(--color-border);
+    border-right: 2px solid var(--color-border);
+    border-bottom: 2px solid var(--color-border);
     text-align: left;
+    color: var(--color-text);
+}
+
+.legal-page th:last-child,
+.legal-page td:last-child {
+    border-right: none;
+}
+
+.legal-page tr:last-child td {
+    border-bottom: none;
 }
 
 .legal-page th {
-    background: rgba(255, 255, 255, 0.05);
-    color: var(--color-white);
+    background: var(--color-bg-alt);
     font-family: var(--font-heading);
     text-transform: uppercase;
     letter-spacing: 0.05em;
+    font-weight: 700;
 }
 
 /* --- Copyright line at bottom --- */
 .legal-page__copyright {
     margin-top: 4rem;
     padding-top: 2rem;
-    border-top: 1px solid var(--color-border);
+    border-top: 3px solid var(--color-border);
     text-align: center;
     color: var(--color-text-muted);
 }

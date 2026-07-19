@@ -16,7 +16,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Patrick+Hand&display=swap" rel="stylesheet">
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="static/css/tokens.css">
@@ -46,11 +46,23 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="container anim-fade-up">
-            <h1 class="hero__title anim-float">NVKHUY GAMES</h1>
-            <p class="hero__subtitle">Fun & Tap</p>
-            <div class="hero__btns">
-                <a href="#android-games" class="btn btn--primary">Android Games</a>
-                <a href="#ios-games" class="btn btn--secondary">iOS Games</a>
+            <h1 class="hero__title anim-float">NVKHUY GAMES <span style="color: var(--color-primary); display: inline-block; transform: rotate(10deg); margin-left: -5px;">!</span></h1>
+            <div>
+                <p class="hero__subtitle">Fun & Tap</p>
+            </div>
+            <div class="hero__btns-wrapper">
+                <div class="hero__btns">
+                    <a href="#android-games" class="btn btn--primary">Android Games</a>
+                    <a href="#ios-games" class="btn btn--secondary">iOS Games</a>
+                </div>
+                <!-- Sketch Arrow pointing to CTAs -->
+                <div class="hero-arrow-container">
+                    <svg class="sketch-arrow" viewBox="0 0 80 80" width="70" height="70" fill="none" stroke="currentColor">
+                        <path d="M 60 10 C 65 30, 45 45, 15 55" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="6,6"/>
+                        <path d="M 12 43 C 12 48, 13 52, 13 55 C 16 54, 21 52, 26 50" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span class="hero-arrow-text" style="transform: rotate(-10deg);">Tap to Play!</span>
+                </div>
             </div>
         </div>
     </section>
