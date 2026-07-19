@@ -3,6 +3,11 @@
     "developer_url": "https://play.google.com/store/apps/dev?id=7775537027678361006",
     "games": [
       {
+        "name": "Sort Flower",
+        "url": "https://play.google.com/store/apps/details?id=com.nvkhuy.loopsort",
+        "image": "https://play-lh.googleusercontent.com/Ib5X6hoUPDKPEx9kVbTM7V2CsQMV9RUg6-yElAuW7j207z6HCzu4ER-Gz3Ug9ZAQSXiuVbf2ETB-fhk7oJxArA=s180-rw"
+      },
+      {
         "name": "Loop Sort",
         "url": "https://play.google.com/store/apps/details?id=com.nvkhuy.loopsort",
         "image": "https://play-lh.googleusercontent.com/i1g2DM5YvBWdIXszgiw1UyqyE4ddkW_9nxWv2cAq7eYVvUUg-cml1YJSV66d8Cs1cQ_IlJkMie20xzs-FXo31PM=s180-rw"
