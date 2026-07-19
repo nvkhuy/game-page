@@ -85,7 +85,7 @@
 }
 
 .btn--primary:hover {
-    background-color: var(--color-primary); /* Accent red */
+    background-color: var(--color-secondary); /* Accent blue */
     color: var(--color-white);
     transform: translate(2px, 2px);
     box-shadow: 3px 3px 0px 0px var(--color-border);
@@ -97,7 +97,7 @@
 }
 
 .btn--secondary:hover {
-    background-color: var(--color-secondary); /* Accent blue */
+    background-color: var(--color-primary); /* Accent red */
     color: var(--color-white);
     transform: translate(2px, 2px);
     box-shadow: 3px 3px 0px 0px var(--color-border);
