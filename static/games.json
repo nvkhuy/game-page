@@ -5,32 +5,32 @@
       {
         "name": "Sort Flower",
         "url": "https://play.google.com/store/apps/details?id=com.nvkhuy.sortflower",
-        "image": "https://play-lh.googleusercontent.com/Ib5X6hoUPDKPEx9kVbTM7V2CsQMV9RUg6-yElAuW7j207z6HCzu4ER-Gz3Ug9ZAQSXiuVbf2ETB-fhk7oJxArA=s180-rw"
+        "image": "static/images/sort-flower.png"
       },
       {
         "name": "Loop Sort",
         "url": "https://play.google.com/store/apps/details?id=com.nvkhuy.loopsort",
-        "image": "https://play-lh.googleusercontent.com/i1g2DM5YvBWdIXszgiw1UyqyE4ddkW_9nxWv2cAq7eYVvUUg-cml1YJSV66d8Cs1cQ_IlJkMie20xzs-FXo31PM=s180-rw"
+        "image": "static/images/loop-sort.png"
       },
       {
         "name": "Animal Sort",
         "url": "https://play.google.com/store/apps/details?id=com.nvkhuy.animalsort",
-        "image": "https://play-lh.googleusercontent.com/tmYmAYUYXOkzBg1um5wYFiC5Cd3RybAPhnV8rAnTSb3igacpMravmGWVk3ejSy3JKByhwbT3RBGp13jrRCHt=s180-rw"
+        "image": "static/images/animal-sort.png"
       },
       {
         "name": "Fruit Merge",
         "url": "https://play.google.com/store/apps/details?id=com.nvkhuy.fruitmerge",
-        "image": "https://play-lh.googleusercontent.com/-kjqmuo_ZVyL7tO_Ac7lj_Q6Z0EkscuSWQ3tDwpfSX2LLP65ZL_4Ba6-Akt3YEGeo1c=s180-rw"
+        "image": "static/images/fruit-merge.png"
       },
       {
         "name": "Burget Defense",
         "url": "https://play.google.com/store/apps/details?id=nvkhuy.com.fatguydefense",
-        "image": "https://play-lh.googleusercontent.com/ciSu5nbYtq0MP3hJMoYx7C4Skq6Q4KzwM_8e0K_4Ql5p24ZXX9r_6hJuMbGICh5b6a2x=w480-h960-rw"
+        "image": "static/images/burget-defense.png"
       },
       {
         "name": "Kitty Power",
         "url": "https://play.google.com/store/apps/details?id=huynvk.kittypower",
-        "image": "https://play-lh.googleusercontent.com/KEhrkd91MWCK5oZsRTqi1_mdCoTTdJTYmRF0_6XDyQoA_pazY8nwlfKr4b43KesrR44=w480-h960-rw"
+        "image": "static/images/kitty-power.png"
       }
     ]
   },
@@ -38,9 +38,14 @@
     "developer_url": "https://apps.apple.com/ca/developer/huy-nguyen-vu-khanh/id1585558823",
     "games": [
       {
+        "name": "Saw Loop Pixel",
+        "url": "https://apps.apple.com/us/app/saw-loop-pixel/id6802662635",
+        "image": "static/images/saw-loop-pixel.png"
+      },
+      {
         "name": "Flower Sort",
         "url": "https://apps.apple.com/ca/app/flower-sort-bloom-chill/id6756834499",
-        "image": "https://play-lh.googleusercontent.com/Ib5X6hoUPDKPEx9kVbTM7V2CsQMV9RUg6-yElAuW7j207z6HCzu4ER-Gz3Ug9ZAQSXiuVbf2ETB-fhk7oJxArA=s180-rw"
+        "image": "static/images/flower-sort.png"
       }
     ]
   }

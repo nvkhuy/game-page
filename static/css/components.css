@@ -308,7 +308,6 @@
 
 .site-header__nav a:hover {
     color: var(--color-primary);
-    text-decoration: line-through; /* Playful line-through hover */
 }
 
 @media (max-width: 600px) {
@@ -341,11 +340,11 @@
     color: var(--color-text);
     text-decoration: none;
     position: relative;
+    transition: color var(--transition-fast);
 }
 
 .site-footer__nav a:hover {
     color: var(--color-primary);
-    text-decoration: line-through; /* Playful line-through hover */
 }
 
 .site-footer__copy {
